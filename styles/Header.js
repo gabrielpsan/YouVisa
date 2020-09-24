@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background: #00EB84;
     position: fixed;
@@ -10,14 +10,39 @@ export const Container = styled.div`
     z-index:999;
     display: inline-block;
 
+    
+    @media screen and (max-width: 1050px) {
+        background: #00A75E;
+    }
+
     .header {
-        margin-left: 115px;
-        margin-right: 112px;
-        padding: 13px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .subHeader {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgMenu {
+            display: none;
+    }
+
+    .imgMenu:hover {
+        cursor: pointer;
     }
 
     .logoHeader {
-        margin-top: 7px;
         width: 145px;
         height: 40px;
     }
@@ -37,20 +62,13 @@ export const Container = styled.div`
         color: white;
     }
 
-    .header-right {
-        float: right;
+    .header button a {
+        padding: 10px 25px;
+        color: #111;
     }
 
-    @media screen and (max-width: 876px) {
-        .header a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-        
-        .header-right {
-            float: none;
-        }
+    .header-right {
+        float: right;
     }
 
     .header button {
@@ -66,4 +84,44 @@ export const Container = styled.div`
     .header button:hover {
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1050px) {
+        .header-right {
+            display: none;
+        }
+    }
+
+
+
+    @media screen and (max-width: 1050px) {
+        .subHeader {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .imgMenu {
+                display: block;
+                width: 30px;
+                height: 35px;
+
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 876px) {
+        .header Link {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .header-right {
+            float: none;
+        }
+    }
 `
+
+
+

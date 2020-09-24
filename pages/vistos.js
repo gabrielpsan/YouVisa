@@ -22,7 +22,7 @@ export default function Home() {
           <MenuVistos>
             <ul>
               <li><a  onClick={() => {setMenu("Turismos")}}>Turismo</a></li>
-              <li><a  onClick={() => {setMenu("Eletronicos")}} >Eletrônico - ETA</a></li>
+              <li><a  onClick={() => {setMenu("Eletronicos")}}>Eletrônico - ETA</a></li>
               <li><a  onClick={() => {setMenu("Estudos")}}>Estudos</a></li>
               <li><a  onClick={() => {setMenu("Trabalhos")}}>Trabalho</a></li>
             </ul>

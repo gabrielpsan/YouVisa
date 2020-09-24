@@ -9,9 +9,11 @@ import Social from '../components/Social'
 import Information from '../components/Information'
 import Products from '../components/Products'
 import Questions from '../components/Questions'
-
+import MobileMenu from '../components/MobileMenu'
+import { ServerStyleSheet } from "styled-components";
 
 export default function Home() {
+
   return (
     <Container>
       <Head>
@@ -28,12 +30,13 @@ export default function Home() {
           integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> */}
       </Head>
 
-      <Header />
+      <Header/>
         <DownHeader />
           <Social />
           <Information />
           <Products />
         <Questions />
+        <MobileMenu />
       <FolderBox />
       
     </Container>

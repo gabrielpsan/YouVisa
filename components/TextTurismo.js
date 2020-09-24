@@ -10,30 +10,33 @@ import eur from '../assets/img/eur.png'
 import aus from '../assets/img/aus.png'
 import {TurismoJson, EletronicoJson, Estudos, Trabalhos} from '../utils/TextTurismoJson'
 import { useEffect, useState } from 'react';
+import Router from 'next/router'
 
 export default function TurismoBox({menu}) {
     const [turismo, setTurismo] = useState([]);
 
     function turismoText() {
-        setTurismo(TurismoJson); 
+        setTurismo(TurismoJson);
 
         if(menu == "Turismos") {
-             setTurismo(TurismoJson); 
+          setTurismo(TurismoJson); 
         }
         else if(menu == "Eletronicos") {
-            setTurismo(EletronicoJson); 
+          setTurismo(EletronicoJson); 
         }
         else if(menu == "Estudos") {
-            setTurismo(Estudos); 
+          setTurismo(Estudos); 
         }
         else if(menu == "Trabalhos") {
-            setTurismo(Trabalhos); 
+          setTurismo(Trabalhos); 
         }
     }
+
 
     useEffect(() => {
         turismoText()
     }, [turismo]) 
+
 
   return (
         <>
@@ -42,12 +45,11 @@ export default function TurismoBox({menu}) {
             <Turismo>
                 <ImgTurismo>
                   <img src = {e.where}/>
+                  {console.log(menu)}
                 </ImgTurismo>
                 <TextTurismo>
                   <h1>{e.title}</h1>
-                  <p>
-                      {e.text}
-                  </p>
+                  <p dangerouslySetInnerHTML={{__html: e.text}} />
                 </TextTurismo>
             </Turismo>
             )

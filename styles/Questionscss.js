@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 800px;
-    height: 210vh;
+    width: 80%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 `
 
@@ -12,15 +14,14 @@ export const Text = styled.div`
     }
 `
 export const Box = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
+    padding-top: 40px;
 `
 
 export const SubBox1 = styled.div`
+    margin: 50px 0;
     text-align: left;
-    margin-top: 7%;
-    width: 800px;
-    height: 187px;
+    width: 100%;
+    height: 28vh;
     border: 0.5px solid #E5E5E5;
     border-radius: 18px;
     -webkit-box-shadow: 10px 21px 28px 5px rgba(0,0,0,0.19);
@@ -37,11 +38,14 @@ export const Hiden = styled.div`
 
         margin-left: 4.5%;
         margin-top: 3%;
+        
     p {
         margin-top: 1%;
         opacity: 60%;
     }
+
     img {
-        width: 725px;
+        text-align: center;
+        width: 90%;
     }
 `

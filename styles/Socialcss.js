@@ -24,5 +24,4 @@ export const SocialImgs = styled.div`
         float: left;
         margin-right: 6%;
     }
-
 `

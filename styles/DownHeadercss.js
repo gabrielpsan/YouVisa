@@ -30,6 +30,9 @@ export const TextSub = styled.div`
     color: white;
     margin-top: 4.5%;
     margin-left: 8.5%;
+    @media only screen and (max-width: 750px) {
+        display: none;
+    }
 `
 
 
@@ -39,7 +42,9 @@ export const TextNum = styled.div`
     margin-left: 7%;
     width: 800px;
     margin-right: 0;
-
+    @media only screen and (max-width: 750px) {
+        display: none;
+    }
 
 `
 
@@ -70,8 +75,10 @@ export const FormVisto = styled.div`
     top: -45vh;
     left: 140vh;
     background: white;
+    /* width: 28%; */
     width: 384px;
     height: 545px;
+    /* height: 91%; */
     border-radius: 5px;
     text-align: center;
     -webkit-box-shadow: 10px 21px 28px 5px rgba(0,0,0,0.19);
@@ -80,6 +87,11 @@ export const FormVisto = styled.div`
     padding: 0 auto;
     margin: 0px;
     margin-right: 0px;
+
+    @media only screen and (max-width: 750px) {
+        
+        /* margin-bottom: 10%; */
+    }
 
     input {
         margin-top: 9%;

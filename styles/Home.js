@@ -2,20 +2,17 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     min-height: 100%;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     bottom: 0;
     overflow-x: hidden;
-
 `
 
 export const FooterBox = styled.footer`
-  width: 100vw;
-  height: 584px;
+  min-width: 100vw;
+  min-height: 100vh;
   border-top: 1px solid #eaeaea;
   display: flex;
   background-color: #212026;

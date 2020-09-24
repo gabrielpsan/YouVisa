@@ -1,4 +1,4 @@
-import { Container, FirstText, Types, Image, Text, Image2, Text2, Image3, Text3, Image4, Text4, Depoimentos, Cards, Card1, Card2, Card3 } from '../styles/Productscss'
+import { Container, FirstText, Types, Image, Text, Image2, Text2, Image3, Text3, Image4, Text4, Depoimentos, Cards, CompProd, CompProdReverse, Card3, ImagemCard} from '../styles/Productscss'
 import Pedro from '../assets/img/ImagePedro.png'
 import arrow from '../assets/img/arrow.png'
 import fundoPedro from '../assets/img/fundoPedro.png'
@@ -22,71 +22,77 @@ export default function Products() {
                    tecnologia e expertise de especialistas em vistos.</p>
             </FirstText>
             <Types>
-                <Image>
-                    <img src={Pedro}></img>
-                </Image>
-                <Text>
-                    <h2>Visto de turismo</h2>
-                    <p>Vai viajar de férias com a família, com seus amigos ou<br/>
-                       desbravar o mundo sozinho? Esse é o seu visto! Viaje<br/>
-                       tranquilo por semanas e aproveite sua experiência<br/>
-                       visitando o país. Indicado para viagens que durem menos<br/>
-                       de 6 meses.</p>
-                    
-                    <h3><a href="#">Saiba mais<img src={arrow}/></a></h3>
-                </Text>
+                <CompProd>
+                    <Image>
+                        <img src={Pedro}></img>
+                    </Image>
+                    <Text>
+                        <h2>Visto de turismo</h2>
+                        <p>Vai viajar de férias com a família, com seus amigos ou<br/>
+                        desbravar o mundo sozinho? Esse é o seu visto! Viaje<br/>
+                        tranquilo por semanas e aproveite sua experiência<br/>
+                        visitando o país. Indicado para viagens que durem menos<br/>
+                        de 6 meses.</p>
+                        
+                        <h3><a href="#">Saiba mais<img src={arrow}/></a></h3>
+                    </Text>
+                </CompProd>
 
+                <CompProdReverse>
+                    <Image>
+                        <img src={Visto}></img>
+                    </Image>
+                    <Text>
+                        <h2>Visto eletrônico (ETA)</h2>
+                        <p>Alguns países já oferecem essa modalidade de visto. Com<br/>
+                        ele é permitido que entre no país para trânsito ou para<br/> 
+                        turismo. É prático, rápido e pode ser solicitado de<br/>
+                        qualquer lugar do mundo.</p>
+                        
+                        <h3><a href="#">Saiba mais<img src={arrow}/></a></h3>
+                    </Text>
+                </CompProdReverse>
 
-                
-                <Text2>
-                    <h2>Visto eletrônico (ETA)</h2>
-                    <p>Alguns países já oferecem essa modalidade de visto. Com<br/>
-                       ele é permitido que entre no país para trânsito ou para<br/> 
-                       turismo. É prático, rápido e pode ser solicitado de<br/>
-                       qualquer lugar do mundo.</p>
-                    
-                    <h3><a href="#">Saiba mais<img src={arrow}/></a></h3>
-                </Text2>
-                <Image2>
-                    <img src={Visto}></img>
-                </Image2>
+                <CompProd>
+                    <Image>
+                        <img src={Estudo}></img>
+                    </Image>
+                    <Text>
+                        <h2>Visto de estudos</h2>
+                        <p>Para você que vai estudar, desde um curso rápido para<br/>
+                        aprimorar o inglês ou até um mestrado no exterior, esse é<br/>
+                        o tipo de visto indicado. Em alguns países e situações ele<br/> 
+                        permite trabalhar. Uma das experiências mais imersivas<br/> 
+                        na cultura internacional!</p>
+                        
+                        <h3><a href="#">Saiba mais<img src={arrow}/></a></h3>
+                    </Text>
+                </CompProd>
 
-
-                <Image3>
-                    <img src={Estudo}></img>
-                </Image3>
-                <Text3>
-                    <h2>Visto de estudos</h2>
-                    <p>Para você que vai estudar, desde um curso rápido para<br/>
-                       aprimorar o inglês ou até um mestrado no exterior, esse é<br/>
-                       o tipo de visto indicado. Em alguns países e situações ele<br/> 
-                       permite trabalhar. Uma das experiências mais imersivas<br/> 
-                       na cultura internacional!</p>
-                    
-                    <h3><a href="#">Saiba mais<img src={arrow}/></a></h3>
-                </Text3>
-
-
-                <Text4>
-                    <h2>Visto de trabalho</h2>
-                    <p>Sua empresa precisa de você em outro país ou recebeu<br/> 
-                       uma proposta para trabalhar fora? O visto de trabalho é<br/> 
-                       indicado para diversas oportunidades de trabalho e<br/> 
-                       negócios, e cada país possui seus critérios, por isso se<br/> 
-                       programe e aplique este visto</p>
-                    
-                    <h3><a href="#">Saiba mais<img src={arrow}/></a></h3>
-                </Text4>
-                <Image4>
-                    <img src={Trabalho}></img>
-                </Image4>
+                <CompProdReverse>
+                    <Image>
+                        <img src={Trabalho}></img>
+                    </Image>
+                    <Text>
+                        <h2>Visto de trabalho</h2>
+                        <p>Sua empresa precisa de você em outro país ou recebeu<br/> 
+                        uma proposta para trabalhar fora? O visto de trabalho é<br/> 
+                        indicado para diversas oportunidades de trabalho e<br/> 
+                        negócios, e cada país possui seus critérios, por isso se<br/> 
+                        programe e aplique este visto</p>
+                        
+                        <h3><a href="#">Saiba mais<img src={arrow}/></a></h3>
+                    </Text>
+                </CompProdReverse>
             </Types>
 
             <Depoimentos>
                 <h1>Depoimentos</h1>
                 <Cards>
-                    <Card1>
-                        <img src={Asp}></img>
+                    <Card3>
+                        <ImagemCard>
+                            <img src={Asp}></img>
+                        </ImagemCard>
                         <p>A YouVisa me ajudou a realizar<br/> 
                            o sonho de viajar para a<br/> 
                            Austrália. Todo o processo foi<br/> 
@@ -95,12 +101,14 @@ export default function Products() {
                             nessa realização de sonho.<br/>
                         </p>
                         <span>
-                            <img className="Dep1" src={Dep1}></img>
+                            <img className="Dep3" src={Dep1}></img>
                             <h3>Kaleb</h3>
                         </span>
-                    </Card1>
-                    <Card2>
-                        <img src={Asp}></img>
+                    </Card3>
+                    <Card3>
+                        <ImagemCard>
+                            <img src={Asp}></img>
+                        </ImagemCard>
                         <p>Com tantas viagens a trabalho e<br/>
                            sem tempo de me informar<br/> 
                            sobre o visto, busquei a<br/> 
@@ -109,12 +117,14 @@ export default function Products() {
                            minha viagem para o Canadá!<br/> 
                         </p>
                         <span>
-                            <img className="Dep2" src={Dep2}></img>
+                            <img className="Dep3" src={Dep2}></img>
                             <h3>Junior</h3>
                         </span>
-                    </Card2>
+                    </Card3>
                     <Card3>
-                        <img src={Asp}></img>
+                        <ImagemCard>
+                            <img  src={Asp} />
+                        </ImagemCard>
                         <p>Tirar o visto sempre foi uma<br/>
                            coisa burocrática e chata para<br/>
                            mim. Quando busquei a<br/> 

@@ -11,14 +11,12 @@ import stud from '../assets/img/stud.png'
 
 export default function Information() {
     return (
-        <Container>
+        <Container id="information" >
             <Imagens>
-                <ul>
-                    <li><img src={InfoImg1}></img></li>
-                    <li><img src={InfoImg2}></img></li>
-                    <li><img src={InfoImg3}></img></li>
-                    <li><img src={InfoImg4}></img></li>
-                </ul>
+                <img src={InfoImg1}></img>
+                <img src={InfoImg2}></img>
+                <img src={InfoImg3}></img>
+                <img src={InfoImg4}></img>
             </Imagens>
             <TextSide>
                 <h2>O QUE FAZEMOS</h2>

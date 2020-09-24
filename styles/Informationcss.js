@@ -3,29 +3,39 @@ import styled from 'styled-components';
 export const Container = styled.div`
     margin-top: 8%;
     background: white;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    margin-left: 10%;
     /* margin-top: 13%; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 750px) {
+        height: 210vh;
+        flex-direction: column;
+    }
 
 `
 export const Imagens = styled.div`
+    padding-left: 40px;
+    display: inline;
+    width: 50%;
+
+    @media only screen and (max-width: 750px) {
+        padding-left: 0px;
+        width: 100%;
+    }
+    
 
     img {
-        width: 280px;
-        height: 283px;
+        padding: 10px;
+        width: 50%;
         border-radius: 16px;
-        margin-right: 3vw;   
-        margin-bottom: 5vh;
     }
 
-    li {
-        list-style-type: none;
-        display: inline;
-
+    img:nth-child(2n){
+        position: relative;
+        top: -60px;
     }
+
     
      /* {
         position: relative;
@@ -33,6 +43,13 @@ export const Imagens = styled.div`
     } */
 `
 export const TextSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    width: 50%;
+    @media only screen and (max-width: 750px) {
+        width: 100%;
+    }
     h2 {
         font-size: 20px;
         color: #1B88EF;
